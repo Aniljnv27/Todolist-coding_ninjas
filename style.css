@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: purple;
+}
+
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    margin-top: 20vh;
+    padding: 20px;
+    background-color: cyan;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #555;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.input-container input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+}
+
+.input-container button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #f8f8f8;
+}
+
+.todo-item.completed {
+    background-color: #e0e0e0;
+}
+
+.todo-item input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.todo-item .todo-text {
+    flex-grow: 1;
+    font-size: 16px;
+    color: #333;
+}
+
+.todo-item button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    background-color: #e74c3c;
+    color: #fff;
+    cursor: pointer;
+}
+
+.filter-container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.filter-container button {
+    margin-right: 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    background-color: #ccc;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-container button.active {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        max-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .container {
+        max-width: 250px;
+    }
+}
