@@ -1,9 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
+    /* Set the font family for the entire body */
+    /* font-family: Arial, sans-serif; */
     background-color: purple;
 }
 
 .container {
+    /* Define the styles for the container div */
     max-width: 400px;
     margin: 20px auto;
     margin-top: 20vh;
@@ -14,16 +16,19 @@ body {
 }
 
 h2 {
+    /* Define the styles for the h2 element */
     color: #555;
     text-align: center;
 }
 
 .input-container {
+    /* Define the styles for the input container */
     display: flex;
     margin-bottom: 10px;
 }
 
 .input-container input {
+    /* Define the styles for the input element within the input container */
     flex-grow: 1;
     padding: 10px;
     font-size: 16px;
@@ -32,6 +37,7 @@ h2 {
 }
 
 .input-container button {
+    /* Define the styles for the button element within the input container */
     padding: 10px 15px;
     font-size: 16px;
     border: none;
@@ -42,11 +48,13 @@ h2 {
 }
 
 .todo-list {
+    /* Define the styles for the todo list */
     list-style-type: none;
     padding: 0;
 }
 
 .todo-item {
+    /* Define the styles for each todo item */
     display: flex;
     align-items: center;
     margin-bottom: 10px;
@@ -56,21 +64,25 @@ h2 {
 }
 
 .todo-item.completed {
+    /* Define the styles for a completed todo item */
     background-color: #e0e0e0;
 }
 
 .todo-item input[type="checkbox"] {
+    /* Define the styles for the checkbox within a todo item */
     margin-right: 10px;
     cursor: pointer;
 }
 
 .todo-item .todo-text {
+    /* Define the styles for the todo text within a todo item */
     flex-grow: 1;
     font-size: 16px;
     color: #333;
 }
 
 .todo-item button {
+    /* Define the styles for the button within a todo item */
     padding: 5px 10px;
     font-size: 14px;
     border: none;
@@ -81,11 +93,13 @@ h2 {
 }
 
 .filter-container {
+    /* Define the styles for the filter container */
     margin-top: 10px;
     text-align: center;
 }
 
 .filter-container button {
+    /* Define the styles for the buttons within the filter container */
     margin-right: 5px;
     font-size: 14px;
     border: none;
@@ -97,17 +111,20 @@ h2 {
 }
 
 .filter-container button.active {
+    /* Define the styles for the active button within the filter container */
     background-color: #4caf50;
     color: #fff;
 }
 
 @media only screen and (max-width: 500px) {
+    /* Define the styles for screens up to 500px width */
     .container {
         max-width: 300px;
     }
 }
 
 @media only screen and (max-width: 320px) {
+    /* Define the styles for screens up to 320px width */
     .container {
         max-width: 250px;
     }
