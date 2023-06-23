@@ -27,6 +27,18 @@ h2 {
     margin-bottom: 10px;
 }
 
+button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+  }
+  
+  /* Styles for the button when hovered */
+button:hover {
+    background-color: rgb(45, 17, 183);
+  }
+
+
 .input-container input {
     /* Define the styles for the input element within the input container */
     flex-grow: 1;
